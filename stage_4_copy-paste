@@ -99,7 +99,7 @@ def file_manager():
                     source = path_usr[0] if len(path_usr) > 0 else None
                     destination = path_usr[1] if len(path_usr ) > 1 else None
 
-                    if len(path_usr) != 2 or not source or not destination:  # Ensure both names are specified
+                    if not source or not destination:  # Ensure both names are specified
                         print("Specify the current name of the file or directory and the new location and/or name")
                         return
 
